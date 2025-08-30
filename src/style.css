@@ -1,0 +1,5 @@
+img:hover {
+    transition: all .5s;
+    transform:scale(1.1);
+    filter:contrast(70%)
+}

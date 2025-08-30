@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "The Silent Patient",
+      "category": "Thriller",
+      "author": "Alex Michaelides",
+      "price": 12.99,
+      "img": "https://celadonbooks.com/wp-content/uploads/2018/06/thesilentpatient_final_fc-672x1024.jpg",
+      "description": "A psychological thriller about a woman who stops speaking after a shocking act of violence.",
+      "longDescription": "The Silent Patient tells the story of Alicia Berenson, a famous painter who shoots her husband and then never speaks another word. Theo Faber, a psychotherapist, becomes obsessed with uncovering the mystery behind her silence. As he delves deeper into her past, dark secrets and shocking truths emerge in this chilling psychological thriller."
+    },
+    {
+      "id": 2,
+      "name": "The Girl on the Train",
+      "category": "Thriller",
+      "author": "Paula Hawkins",
+      "price": 13.50,
+      "img": "https://th.bing.com/th/id/ODL.5c1ce0c4ded4e66777bb0b53ee7cdd2d?w=192&h=300&c=10&rs=1&o=6&dpr=1.6&pid=AlgoBlockDebug",
+      "description": "A suspenseful story of secrets, deception, and a woman’s haunting discoveries.",
+      "longDescription": "Rachel, a troubled woman, takes the same train every day and watches the same couple from her window, imagining their perfect life. One day she witnesses something shocking, leading her into a dangerous web of lies, deceit, and murder. The Girl on the Train explores obsession, memory, and betrayal in an unputdownable thriller."
+    },
+    {
+      "id": 3,
+      "name": "Atomic Habits",
+      "category": "Self-Help",
+      "author": "James Clear",
+      "price": 14.50,
+      "img": "https://ia600403.us.archive.org/BookReader/BookReaderImages.php?zip=/28/items/atomic-habits-by-james-clear.pdf/Atomic%20Habits%20by%20James%20Clear.pdf_jp2.zip&file=Atomic%20Habits%20by%20James%20Clear.pdf_jp2/Atomic%20Habits%20by%20James%20Clear.pdf_0000.jp2&id=atomic-habits-by-james-clear.pdf&scale=4&rotate=0",
+      "description": "A guide to building good habits and breaking bad ones using small, incremental changes.",
+      "longDescription": "James Clear presents a powerful framework for improving your life every day through tiny, consistent changes. Atomic Habits explains how habits are formed, how to make good habits stick, and how to eliminate destructive ones. With actionable strategies and real-life examples, it shows how small changes can compound into remarkable results."
+    },
+    {
+      "id": 4,
+      "name": "Deep Work",
+      "category": "Self-Help",
+      "author": "Cal Newport",
+      "price": 13.80,
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1447957962i/25744928.jpg",
+      "description": "A practical guide to achieving focused success in a distracted world by mastering deep work.",
+      "longDescription": "Cal Newport introduces the concept of 'deep work'—the ability to focus without distraction on cognitively demanding tasks. In a world full of social media, emails, and constant interruptions, Deep Work provides strategies to train your brain for concentration, achieve high-quality results, and maximize productivity in both personal and professional life."
+    },
+    {
+      "id": 5,
+      "name": "Project Hail Mary",
+      "category": "Science Fiction",
+      "author": "Andy Weir",
+      "price": 15.00,
+      "img": "https://m.media-amazon.com/images/I/81zD9kaVW9L._SL1500_.jpg",
+      "description": "A lone astronaut must save humanity from extinction in this thrilling space adventure.",
+      "longDescription": "Ryland Grace wakes up alone on a spaceship, with no memory of who he is or why he’s there. Soon, he realizes he’s humanity’s last hope to stop an extinction-level threat from destroying Earth. Project Hail Mary combines science, humor, and suspense in a gripping tale of survival and discovery."
+    },
+    {
+      "id": 6,
+      "name": "Dune",
+      "category": "Science Fiction",
+      "author": "Frank Herbert",
+      "price": 16.20,
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg",
+      "description": "A science fiction epic set on the desert planet Arrakis, exploring politics, religion, and power.",
+      "longDescription": "Set in a distant future, Dune tells the story of Paul Atreides, heir to a noble family tasked with ruling the desert planet Arrakis—the only source of the universe’s most valuable substance, 'spice.' The novel explores themes of politics, ecology, religion, and human ambition in one of the greatest sci-fi sagas ever written."
+    },
+    {
+    "id": 7,
+    "name": "A Game of Thrones",
+    "category": "Fantasy",
+    "author": "George R. R. Martin",
+    "price": 19.00,
+    "img": "https://th.bing.com/th/id/R.1f2246b4a249778f333f8c75a496ebcd?rik=0lM87qqe8UKGsw&riu=http%3a%2f%2fgeorgerrmartin.com%2fgallery%2fcoverart%2fGOThcEng.jpg&ehk=Ot6Pxgt6pGDu63%2fvEiNCfquDbyvyR%2fJOmbsaB2bmRSc%3d&risl=&pid=ImgRaw&r=0",
+    "description": "Epic fantasy tale of power, politics, betrayal, and the deadly struggle for the Iron Throne.",
+    "longDescription": "George R. R. Martin's 'A Game of Thrones' is the first book in the 'A Song of Ice and Fire' series. It introduces readers to the Seven Kingdoms of Westeros, a land where noble families battle for power and survival. With its intricate characters, political intrigue, and shocking twists, the novel redefined modern fantasy storytelling."
+    },
+    {
+      "id": 8,
+      "name": "The Midnight Library",
+      "category": "Fantasy",
+      "author": "Matt Haig",
+      "price": 13.20,
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602190253i/52578297.jpg",
+      "description": "A woman discovers a magical library where she can explore different versions of her life.",
+      "longDescription": "Nora Seed finds herself in the Midnight Library, a magical place between life and death that allows her to live out countless different versions of her life. Each book contains a possible reality, and as she explores them, she must confront regrets, choices, and what truly makes life worth living."
+    },
+    {
+      "id": 9,
+      "name": "1984",
+      "category": "Dystopian",
+      "author": "George Orwell",
+      "price": 10.50,
+      "img": "https://ia801207.us.archive.org/BookReader/BookReaderImages.php?zip=/21/items/GeorgeOrwells1984/1984_jp2.zip&file=1984_jp2/1984_0000.jp2&id=GeorgeOrwells1984&scale=4&rotate=0",
+      "description": "A dystopian novel depicting a totalitarian regime that monitors and controls every aspect of life.",
+      "longDescription": "George Orwell’s 1984 paints a chilling vision of a future society under constant surveillance by Big Brother. Individual freedom is crushed, truth is manipulated, and independent thought is considered a crime. This classic dystopian novel remains one of the most influential critiques of totalitarianism and authoritarian power."
+    },
+    {
+      "id": 10,
+      "name": "Brave New World",
+      "category": "Dystopian",
+      "author": "Aldous Huxley",
+      "price": 11.25,
+      "img": "https://tse3.mm.bing.net/th/id/OIP.AEEavrB_TZNFb4MXo0ThugHaLP?r=0&pid=ImgDet&w=203&h=308&c=7&dpr=1.6&o=7&rm=3",
+      "description": "A dystopian vision of a future society shaped by genetic engineering and social control.",
+      "longDescription": "In Brave New World, Huxley imagines a society where people are genetically engineered, socially conditioned, and pacified by pleasure and technology. Individuality and freedom have been replaced by stability and control. The novel serves as both a warning and a thought-provoking exploration of science, consumerism, and conformity."
+    },
+    {
+      "id": 11,
+      "name": "Educated",
+      "category": "Memoir",
+      "author": "Tara Westover",
+      "price": 13.75,
+      "img": "https://th.bing.com/th/id/ODL.edc6579eacbd4ebb0c984abf7e08d088?w=198&h=300&c=10&rs=1&o=6&dpr=1.6&pid=AlgoBlockDebug",
+      "description": "A memoir of a woman who grew up in a strict survivalist family and later pursued education.",
+      "longDescription": "Tara Westover grew up in rural Idaho in a survivalist family that forbade formal education and medical care. Despite these challenges, she self-educated, escaped her family, and eventually earned a PhD from Cambridge University. Educated is a powerful memoir about resilience, the pursuit of knowledge, and redefining one’s identity."
+    },
+    {
+      "id": 12,
+      "name": "Steve Jobs",
+      "category": "Memoir",
+      "author": "Walter Isaacson",
+      "price": 15.50,
+      "img": "https://tse3.mm.bing.net/th/id/OIP.EGc7gMXj0MzsS4v_SdEeRQHaLS?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "description": "A magical library offers infinite lives, choices, and the chance to find happiness.",
+      "longDescription": "Based on over forty interviews with Steve Jobs and conversations with family members, friends, and colleagues, Walter Isaacson’s biography provides a compelling portrait of Apple’s visionary co-founder. The book explores Jobs’s creativity, leadership style, flaws, and his influence on technology, design, and innovation."
+    }
+  ]
+}
