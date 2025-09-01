@@ -1,7 +1,7 @@
 import { BrowserRouter,Route, Routes } from 'react-router'
 import Default from './layouts/Default'
 import Profile from './pages/Profile'
-import Home from './Home'
+import Home from './pages/Home'
 import Login from './pages/Login'
 import Error from './pages/Error'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
