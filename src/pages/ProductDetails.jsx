@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
+import Model from '../components/Model';
+import { toast } from 'react-toastify';
+import "../style.css"
 
 const ProductDetails = () => {
     let [book,setBook]=useState({})
@@ -16,6 +19,30 @@ const ProductDetails = () => {
         }
         getData()
     },[id])
+    function handleDelete(){
+      swal({
+        title: "Are you sure you want to delete?",
+        text: "Once deleted, you will not be able to recover this Book!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then( async (willDelete) => {
+        if (willDelete) {
+          await axios.delete("http://localhost:3000/products/"+id)
+          toast.success("Book delete successfully")
+          setTimeout(() => {
+             navigate("/")
+          }, 2000);
+          swal(" Book has been deleted!", {
+            icon: "success",
+          });
+        } else {
+          swal("Book is safe!");
+        }
+      });
+      
+    }
+
     return (
     <>
       {book && 
@@ -30,27 +57,17 @@ const ProductDetails = () => {
             <h6 className="card-text">Author : {book.author}</h6>
             <p className="card-text lh-base">{book.description}</p>
             <p className="card-text lh-lg">{book.longDescription}</p>
-            <button onClick={()=> navigate("/")} className="btn btn-primary">Back To Products</button>
-
+            <button onClick={()=> navigate("/")} className="btn btn-primary mx-3 mt-2">Back To Products</button>
+            <button onClick={()=>window.open(book.pdf)} className="btn btn-primary mx-3 mt-2">Read Book online</button>
+            <button  className="btn btn-warning mx-3 mt-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+            <button  className="btn btn-danger mx-3 mt-2" onClick={handleDelete}>Delete</button>
+            <Model/>
           </div>
         </div>
       </div>
     </div>
 
     }
-     {/* {product && <div  className="container w-25 my-4">
-          <div className="card" style={{width: "18rem"}}>
-          <div className='overflow-hidden'>
-            <img src={product.img} className="card-img-top" alt="..." style={{height:"300px"}}/>
-          </div>
-          <div className="card-body" >
-              <h5 className="card-title fs-4">{product.name }</h5>
-              <p className="card-text">{product.author}</p>
-              <p className="card-text">{product.description}</p>
-              <button  className="btn btn-primary">more Details</button>
-          </div>
-          </div>
-        </div>} */}
     </>
   )
 }

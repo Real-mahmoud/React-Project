@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const Default = () => {
   return (
     <>
-        <div className="d-flex justify-content-between flex-column " style={{minHeight:"100vh"}}>
+        <div className="d-flex justify-content-between flex-column bg-secondary-subtle " style={{minHeight:"100vh"}}>
             <div>
                 <Navbar/>
                 <Outlet/>
