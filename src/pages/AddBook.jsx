@@ -43,24 +43,24 @@ const AddBook = () => {
     
     return (
     <>
-    <div className="container my-3">
-            <form onSubmit={handleSubmit}>
+    <div className="container my-3 w-75">
+            <form onSubmit={handleSubmit} style={{color:"white"}}>
     <fieldset >
-        <legend className='text-center h2'>ADD NEW BOOK</legend>
+        <legend className='text-center h2' style={{fontFamily:"cursive"}}>ADD NEW BOOK</legend>
         <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label" >Book Name</label>
-        <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.name} name='name' onChange={handleChange}/>
+        <input type="text" id="disabledTextInput" className="form-control" style={{backgroundColor:"#838a8dff", color:"#242225ff"}} placeholder="Enter Book Name" value={book.name} name='name' onChange={handleChange}/>
         {errors && errors.name && <p><small className='text-danger'>{errors.name}</small></p>}
         </div>
         <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label">Book Author</label>
-        <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.author} name='author' onChange={handleChange}/>
+        <input type="text" id="disabledTextInput" className="form-control" placeholder="EnterBook Author" style={{backgroundColor:"#838a8dff", color:"#242225ff"}}  value={book.author} name='author' onChange={handleChange}/>
         {errors && errors.author && <p><small className='text-danger'>{errors.author}</small></p>}
         
         </div>
         <div className="mb-3">
         <label htmlFor="disabledSelect" className="form-label" >Category</label>
-        <select id="disabledSelect" className="form-select" value={book.category} name='category' onChange={handleChange}>
+        <select id="disabledSelect" className="form-select" value={book.category} name='category' style={{backgroundColor:"#838a8dff", color:"#242225ff"}}  onChange={handleChange}>
 
             <option value="none">none</option>
             <option value="Thriller">Thriller</option>
@@ -73,25 +73,25 @@ const AddBook = () => {
         </div>
          <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label">Book Image</label>
-        <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.img} name='img' onChange={handleChange}/>
+        <input type="text" id="disabledTextInput" className="form-control" placeholder="Enter Book Image" style={{backgroundColor:"#838a8dff", color:"#242225ff"}}  value={book.img} name='img' onChange={handleChange}/>
         {errors && errors.img && <p><small className='text-danger'>{errors.img}</small></p>}
         
         </div>
          <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label">Book Description</label>
-        <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.description} name='description' onChange={handleChange}/>
+        <input type="text" id="disabledTextInput" className="form-control" placeholder="Enter Book Description" style={{backgroundColor:"#838a8dff", color:"#242225ff"}}  value={book.description} name='description' onChange={handleChange}/>
         {errors && errors.description && <p><small className='text-danger'>{errors.description}</small></p>}
         
         </div>
          <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label">Book long Description</label>
-        <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.longDescription} name='longDescription' onChange={handleChange}/>
+        <input type="text" id="disabledTextInput" className="form-control" placeholder="Enter Book long Description" style={{backgroundColor:"#838a8dff", color:"#242225ff"}}  value={book.longDescription} name='longDescription' onChange={handleChange}/>
         {errors && errors.longDescription && <p><small className='text-danger'>{errors.longDescription}</small></p>}
         
         </div>
          <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label">Online PDF</label>
-        <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.pdf} name='pdf' onChange={handleChange}/>
+        <input type="text" id="disabledTextInput" className="form-control" placeholder="Enter Online PDF for book Book" style={{backgroundColor:"#838a8dff", color:"#242225ff"}}  value={book.pdf} name='pdf' onChange={handleChange}/>
         {errors && errors.pdf && <p><small className='text-danger'>{errors.pdf}</small></p>}
        
         </div>

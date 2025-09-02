@@ -46,28 +46,28 @@ const Home = () => {
     <>  
     <div className=' overflow-hidden position-relative ' style={{maxHeight:"70vh"}}>
     <video src={video} autoPlay muted loop className=' w-100 object-fit-cover '  style={{objectPosition:"bottom",filter: "brightness(30%)",height:"70%"}}></video>
-      <p className='welcome position-absolute bottom-50 end-50  h1 ' style={{transform:"translate(50%)",color:"white"}}>Welcome To our Magazine...</p>
+      <p className='welcome position-absolute bottom-50 end-50   ' style={{transform:"translate(50%)",color:"white"}}>Welcome To our Magazine...</p>
     </div>
       <div className='mx-3 my-4  row  justify-content-between'>
         
          <div className='col-12 col-md-6 col-lg-4'>
-        <label htmlFor="in" className=" h6 me-2 fs-5 " >Search for Book</label>    
-        <input id='in' className='w-100 border' type="text" value={search} onChange={handleSearch}  />
+        <label htmlFor="in" className=" h6 me-2 fs-5 " style={{color:"white"}}>Search for Book</label>    
+        <input id='in' className='w-100 border ' type="text" value={search} onChange={handleSearch} style={{backgroundColor:"#29444a86",color:"white"}}  />
          </div>
        <div className=' col-12 col-md-6 col-lg-4 ' >
-         <label htmlFor="disabledSelect" className=" h6 me-2 fs-5  " >Sort by Category</label>    
-        <select id="disabledSelect"  value={category} className='w-100 ' name='category ' onChange={handleSort}>
+         <label htmlFor="disabledSelect" className=" h6 me-2 fs-5  " style={{color:"white"}} >Sort by Category</label>    
+        <select id="disabledSelect"  value={category} className='w-100 ' name='category '  onChange={handleSort}style={{backgroundColor:"#29444a86", color:"white"}}  >
           
-            <option value="All">All</option>
-            <option value="Thriller">Thriller</option>
-            <option value="Self-Help">Self-Help</option>
-            <option value="Science Fiction">Science Fiction</option>
-            <option value="Fantasy">Fantasy</option>
-            <option value="Dystopian">Dystopian</option>
-            <option value="Memoir">Memoir</option>
+            <option value="All" style={{backgroundColor:"#0b6c75ff"}}>All</option>
+            <option value="Thriller" style={{backgroundColor:"#0b6775ff"}}>Thriller</option>
+            <option value="Self-Help" style={{backgroundColor:"#0b6775ff"}}>Self-Help</option>
+            <option value="Science Fiction"style={{backgroundColor:"#0b6775ff"}} >Science Fiction</option>
+            <option value="Fantasy" style={{backgroundColor:"#0b6775ff"}}>Fantasy</option>
+            <option value="Dystopian" style={{backgroundColor:"#0b6775ff"}}>Dystopian</option>
+            <option value="Memoir" style={{backgroundColor:"#0b6775ff"}}>Memoir</option>
         </select>
        </div>
-        <button className='btn btn-primary  my-2 col-12 col-sm-6 col-lg-2' onClick={()=>navigate("/product/new")}>Add New Book</button>
+        {localStorage.getItem("token") && <button className='btn btn-primary  my-3 col-12 col-sm-6 col-lg-2' onClick={()=>navigate("/product/new")}>Add New Book</button>}
       </div>
       <div className="container  mx-auto row ">
         {filteredProducts.map(product =>{

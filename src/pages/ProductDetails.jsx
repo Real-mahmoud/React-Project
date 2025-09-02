@@ -9,12 +9,10 @@ const ProductDetails = () => {
     let [book,setBook]=useState({})
     let {id}=useParams()
     let navigate=useNavigate()
-    console.log(id);
+
     useEffect(()=>{
         async function getData(){
-            let {data}=await axios.get("http://localhost:3000/products/"+id)
-            console.log(data);
-            
+            let {data}=await axios.get("http://localhost:3000/products/"+id)   
             setBook(()=>data)
         }
         getData()
@@ -59,8 +57,8 @@ const ProductDetails = () => {
             <p className="card-text lh-lg">{book.longDescription}</p>
             <button onClick={()=> navigate("/")} className="btn btn-primary mx-3 mt-2">Back To Products</button>
             <button onClick={()=>window.open(book.pdf)} className="btn btn-primary mx-3 mt-2">Read Book online</button>
-            <button  className="btn btn-warning mx-3 mt-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
-            <button  className="btn btn-danger mx-3 mt-2" onClick={handleDelete}>Delete</button>
+           {localStorage.getItem("token") && <button  className="btn btn-warning mx-3 mt-2"  data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>}
+            {localStorage.getItem("token") && <button  className="btn btn-danger mx-3 mt-2" onClick={handleDelete}>Delete</button>}
             <Model/>
           </div>
         </div>

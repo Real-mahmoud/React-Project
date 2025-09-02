@@ -24,9 +24,10 @@ const Model = () => {
         e.preventDefault()
         await axios.put("http://localhost:3000/products/"+id, book)
         toast.success("Book Edit successfully")
+        setBook({...book})
         setTimeout(() => {
             navigate("/")
-        }, 2000);
+        }, 1000);
         setErrors({})
         setBook({name:"",category:"",author:"",img:"",description:"",longDescription:"",pdf:""})
     }

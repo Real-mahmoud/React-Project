@@ -5,25 +5,47 @@ img:hover {
 }
 
 .welcome {
-    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid rgb(53, 65, 132); /* optional typing cursor */
-    animation: Welcoming 3s steps(23) infinite alternate; /* 5 = number of words */
+    border-right: 2px solid white; /* optional typing cursor */
+    animation: Welcoming 2s linear infinite alternate; /* 5 = number of words */
 }
 
 @keyframes Welcoming {
-    from {
-        width:0ch;
+    from { 
+        width: 0;
     }
-    to {
-        width: 27ch;
+    to {    
+        width: 33%;
     }
 }
 
-@media (min-width: 600px) {
+.footer {
+    font-size: 1.3rem;
+    background-color: rgb(23, 42, 48);
+    color: white;
+   
+}
+
+@media (max-width: 600px) {
    .welcome {
      font-size: 1rem;
     } 
+    @keyframes Welcoming {
+        from { 
+            width: 0;
+        }
+        to {    
+            width: 58%;
+        }    
+    }
+    .footer {
+    font-size: 1rem;
+    }
+
+  
+
 }
