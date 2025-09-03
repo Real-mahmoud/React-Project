@@ -13,10 +13,21 @@ import { useState } from 'react'
 function App() {
   // only one manager (emilys) and check this and use principle (lift state up) to give the state to login and profile that contain logout and change the state in each one
   let [isManagerLogIn,setManagerState]= useState(!!localStorage.getItem("token"))
-    
+  let [loading,setLoading]=useState(true)
+  setTimeout(() => {
+    setLoading(false)
 
+  }, 2500);
   return (
     <>
+    {loading &&
+        <div className='d-flex justify-content-center align-items-center' style={{backgroundImage:"linear-gradient(to right ,rgba(45, 51, 54, 1),rgba(14, 44, 63, 1))",minHeight:"100vh"}}>
+        <div className="spinner-border text-info " style={{width: "4rem", height: "4rem"}} role="status">
+        <span className="visually-hidden ">Loading...</span>
+        </div>
+      </div> 
+      }
+     {!loading &&
      <BrowserRouter>
       <Routes>
         <Route path='/' element={<Default isManagerLogIn={isManagerLogIn} />}>
@@ -24,13 +35,14 @@ function App() {
           <Route path='/profile' element={<Profile setManagerState={setManagerState}/>}/>
           <Route path='/product/:id' element={<ProductDetails/>}/>
           <Route path='/product/new' element={<AddBook/>}/>
+          <Route path='*' element={<Error/>}/>
         </Route>
           <Route path='/auth/login' element={<Login setManagerState={setManagerState}/>}/>
-          <Route path='*' element={<Error/>}/>
           
       </Routes>
       <ToastContainer/>
      </BrowserRouter>
+     }
     </>
   )
 }

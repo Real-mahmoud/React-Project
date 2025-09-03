@@ -58,9 +58,9 @@ const Profile = ({setManagerState}) => {
             (<>
             <p className="card-text"><b>Education</b> : Zagazig university (CSE)</p>
             <div className='d-flex justify-content-around mb-2 '>
-                <i class="fa-brands fa-linkedin  fs-1 mb-2 text-primary" ></i>
-            <i class="fa-solid fa-envelope  fs-1 mb-2 text-primary"></i>
-            <i class="fa-brands fa-github fs-1 mb-2 "></i>
+            <a href="https://www.linkedin.com/in/mahmoud-khaled-757644281/" target='_blank'><i class="fa-brands fa-linkedin  fs-1 mb-2 text-primary" ></i> </a>
+            <a href="mailto:mahmoudkhaled2208@gmail.com"><i class="fa-solid fa-envelope  fs-1 mb-2 text-primary"></i></a>
+            <a href="https://github.com/Real-mahmoud" target='_blank'><i class="fa-brands text-black fa-github fs-1 mb-2 "></i></a>
 
             </div>
             </>)

@@ -13,10 +13,8 @@ const Home = () => {
     async function getData(){
       let {data}=await axios.get("http://localhost:3000/products")
       setProducts(()=>data)
-      console.log(products);
     }
     getData()
-
   },[])
 
   function showProductDetails (id){
@@ -42,8 +40,11 @@ const Home = () => {
    
     }
   })
+
+  
   return (
     <>  
+    
     <div className=' overflow-hidden position-relative ' style={{maxHeight:"70vh"}}>
     <video src={video} autoPlay muted loop className=' w-100 object-fit-cover '  style={{objectPosition:"bottom",filter: "brightness(30%)",height:"70%"}}></video>
       <p className='welcome position-absolute bottom-50 end-50   ' style={{transform:"translate(50%)",color:"white"}}>Welcome To our Magazine...</p>
