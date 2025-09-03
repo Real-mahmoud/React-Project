@@ -52,7 +52,7 @@ const Profile = ({setManagerState}) => {
         <div className="card-body">
             <h5 className="card-title">Mahmoud Khaled </h5>
             <p className="card-text">ITI trainee </p>
-            <p className="card-text"><b>Email</b> : mahmoudkhaled220@gmail.com</p>
+            <p className="card-text"><b>Email</b> : mahmoudkhaled2208@gmail.com</p>
 
             {details && 
             (<>

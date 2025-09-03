@@ -37,14 +37,14 @@ const Model = () => {
     <div className="modal-dialog">
         <div className="modal-content">
         <div className="modal-header">
-            <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 className="modal-title fs-5" id="exampleModalLabel">Editing Book</h1>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div className="modal-body">
             
             <form onSubmit={handleSubmit}>
     <fieldset >
-        <legend className='text-center h2'>ADD NEW BOOK</legend>
+        <legend className='text-center h2' style={{fontFamily:"cursive"}}>Edit The Book</legend>
         <div className="mb-3">
         <label htmlFor="disabledTextInput" className="form-label" >Book Name</label>
         <input type="text" id="disabledTextInput" className="form-control" placeholder="Disabled input" value={book.name} name='name' onChange={handleChange}/>
